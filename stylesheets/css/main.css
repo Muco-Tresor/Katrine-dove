@@ -1,0 +1,273 @@
+/*========================================\
+			import base
+\========================================*/
+/*========================================\
+				import
+\========================================*/
+/*=========== import colors================*/
+/*=========== import fonts================*/
+@font-face {
+  font-family: 'ballpark';
+  src: url("../../fonts/ballpark.eot");
+  src: url("../../fonts/ballpark.eot") format("embedded-opentype"), url("../fonts/ballpark.svg") format("svg"), url("../fonts/ballpark.ttf") format("true-type"), url("../fonts/ballpark.woff") format("woff"); }
+@font-face {
+  font-family: 'dayrom';
+  src: url("../../fonts/dayrom.eot");
+  src: url("../../fonts/dayrom.eot") format("embedded-opentype"), url("../fonts/dayrom.svg") format("svg"), url("../fonts/dayrom.ttf") format("true-type-font"), url("../fonts/dayrom.woff") format("woff");
+  font-weight: normal; }
+/*=========== import reset css================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "dayrom";
+  background-color: rgba(0, 0, 0, 0.9); }
+  body h2 {
+    text-align: center;
+    color: #DD6d8c;
+    font-weight: 800;
+    font-size: 35px; }
+
+.wrapper {
+  width: 1200px;
+  max-width: 90%;
+  margin: auto; }
+
+/*========================================\
+			import module
+\========================================*/
+.button {
+  background-color: #444;
+  padding: 0.4em 2em;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+  outline: none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+  .button:hover {
+    transform: scale(0.9); }
+
+/*========================================\
+			import layout
+\========================================*/
+.banner {
+  position: relative;
+  /*=========== header ================*/
+  /*=========== banner slider ================*/
+  /*=========== banner intro ================*/ }
+  .banner header {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%; }
+    .banner header nav {
+      display: flex;
+      justify-content: space-between; }
+      .banner header nav .logo img {
+        margin: 1em 0 0.5em 2em; }
+      .banner header nav ul {
+        display: flex;
+        align-items: center;
+        margin-right: 5em; }
+        .banner header nav ul li {
+          list-style-type: none;
+          margin-right: 1em; }
+          .banner header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            transition: color 0.5s ease-in-out; }
+            .banner header nav ul li a:hover {
+              color: #DD6d8c; }
+            .banner header nav ul li a:focus {
+              color: #DD6d8c; }
+  .banner .banner__slider .banner__slider__images img {
+    width: 100%; }
+  .banner .banner__slider .banner__slider__image__description .banner__slider__image__description__card {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 500px;
+    position: absolute;
+    top: 240px;
+    left: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 0 0 25em;
+    z-index: 10; }
+    .banner .banner__slider .banner__slider__image__description .banner__slider__image__description__card p {
+      color: #fff; }
+    .banner .banner__slider .banner__slider__image__description .banner__slider__image__description__card a {
+      display: inline-block;
+      color: #DD6d8c;
+      margin-top: 0.4em; }
+      .banner .banner__slider .banner__slider__image__description .banner__slider__image__description__card a:hover {
+        color: #DD6d8c; }
+  .banner .banner_intro {
+    background-color: #a56375; }
+    .banner .banner_intro .wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: -0.29em;
+      padding: 20px 0; }
+      .banner .banner_intro .wrapper p {
+        width: 600px;
+        color: #fff;
+        font-size: 20px; }
+      .banner .banner_intro .wrapper .button {
+        display: inline-block;
+        color: #DD6d8c;
+        margin-left: 50%; }
+
+.portfolio {
+  margin-bottom: 5em; }
+  .portfolio h2 {
+    padding: 0.3em;
+    font-size: 50px;
+    text-decoration: underline; }
+  .portfolio .wrapper {
+    display: flex;
+    justify-content: center; }
+    .portfolio .wrapper .portfolio__gallery-images .images {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: space-around;
+      justify-content: center;
+      overflow: hidden; }
+      .portfolio .wrapper .portfolio__gallery-images .images a {
+        display: inline-block;
+        width: 400px;
+        height: 300px;
+        margin: 14px;
+        overflow: hidden; }
+        .portfolio .wrapper .portfolio__gallery-images .images a:after {
+          position: absolute;
+          color: #fff;
+          content: attr(title); }
+        .portfolio .wrapper .portfolio__gallery-images .images a img {
+          width: 400px;
+          height: 300px;
+          border-radius: 5px;
+          outline: none;
+          transition: transform 0.3s; }
+          .portfolio .wrapper .portfolio__gallery-images .images a img:hover {
+            transform: scale(1.04);
+            border-radius: 5px; }
+
+footer {
+  color: #aaaaaa; }
+  footer h3 {
+    color: #DD6d8c;
+    font-size: 2em;
+    letter-spacing: 0.03em;
+    text-decoration: underline; }
+  footer h4 {
+    color: #DD6d8c;
+    font-size: 1.3em; }
+  footer a {
+    color: #DD6d8c;
+    text-decoration: none; }
+    footer a:hover {
+      color: #d3446b; }
+  footer .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    footer .wrapper .footer__equipement {
+      width: 250px; }
+      footer .wrapper .footer__equipement h4 {
+        margin: 0.4em 0; }
+      footer .wrapper .footer__equipement ul li {
+        list-style-type: none; }
+        footer .wrapper .footer__equipement ul li span {
+          font-size: 1.4em;
+          transition: 0.1s; }
+        footer .wrapper .footer__equipement ul li a {
+          color: #aaaaaa;
+          font-size: 0.9em; }
+          footer .wrapper .footer__equipement ul li a:hover {
+            color: #DD6d8c; }
+        footer .wrapper .footer__equipement ul li:hover span {
+          margin-left: 0.2em;
+          color: #DD6d8c; }
+    footer .wrapper .footer__about-me {
+      width: 350px; }
+      footer .wrapper .footer__about-me p {
+        margin: 1.6em 0; }
+    footer .wrapper .footer__publication {
+      display: flex;
+      flex-direction: column;
+      width: 250px; }
+      footer .wrapper .footer__publication .pub {
+        display: flex;
+        margin-bottom: 1em; }
+        footer .wrapper .footer__publication .pub .pub__number span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 60px;
+          height: 60px;
+          margin-right: 0.7em;
+          border-radius: 50px;
+          background-color: #c4c4c4;
+          color: rgba(0, 0, 0, 0.9);
+          font-family: sans-serif;
+          font-size: 20px; }
+        footer .wrapper .footer__publication .pub .pub__content p {
+          line-height: 20px;
+          text-align: left; }
+          footer .wrapper .footer__publication .pub .pub__content p a {
+            font-style: italic; }
+    footer .wrapper .footer__contact {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 4em 0 1em 0; }
+      footer .wrapper .footer__contact .footer__contact__copy-right {
+        color: #dddddd; }
+      footer .wrapper .footer__contact .footer__contact__social-networks ul {
+        display: flex;
+        flex-wrap: wrap; }
+        footer .wrapper .footer__contact .footer__contact__social-networks ul li {
+          margin-right: 2em;
+          list-style-type: none; }
+          footer .wrapper .footer__contact .footer__contact__social-networks ul li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #f7f7f7;
+            border-radius: 50px;
+            color: #f7f7f7;
+            font-size: 20px;
+            text-decoration: none;
+            transition: 0.1s; }
+            footer .wrapper .footer__contact .footer__contact__social-networks ul li a:hover {
+              border-color: #c4c4c4;
+              color: #c4c4c4; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,61 @@
+// portfolio
+.portfolio
+{
+
+	margin-bottom   : 5em;
+	h2
+	{
+		padding        : 0.3em;
+		font-size      : 50px;
+		text-decoration: underline;
+	}
+	.wrapper
+	{
+		display        : flex;
+		justify-content: center;
+
+		.portfolio__gallery-images
+		{
+			.images
+			{
+				display: flex;
+				flex-wrap: wrap;
+				align-items: space-around;
+				justify-content: center;
+				overflow: hidden;
+				a
+				{
+					display: inline-block;
+					width: 400px; height: 300px;
+					margin: 14px;
+					overflow: hidden;
+
+					&:after
+					{
+						position: absolute;
+						color: $white;
+						content: attr(title);
+					}
+
+
+					img
+					{
+						width: 400px; height: 300px;
+						border-radius: 5px;
+						outline: none;
+						transition: transform 0.3s;
+
+
+						&:hover
+						{
+							transform: scale(1.04);
+							border-radius: 5px;
+						}
+					}
+
+				}
+			}
+		}
+
+	}
+}
