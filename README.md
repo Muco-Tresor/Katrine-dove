@@ -1,5 +1,5 @@
-# Katrine-dove
-a design of TemplateMonster.com
+Katrine-dove
+============
+a design of [TemplateMonster](https://www.TemplateMonster.com)
 Reprogrammed by
-#tWeb Developpement Services Agency
-#Programmer Muco Tresor
+**tWeb Developpement Services Agency**   *Programmer:* **Muco Tresor**
